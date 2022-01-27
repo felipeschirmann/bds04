@@ -1,4 +1,4 @@
-package com.devsuperior.bds04.exceptions;
+package com.devsuperior.bds04.services.exceptions;
 
 public class DatabaseException extends RuntimeException {
 

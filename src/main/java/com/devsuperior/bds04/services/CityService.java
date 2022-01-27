@@ -12,9 +12,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.devsuperior.bds04.dto.CityDTO;
 import com.devsuperior.bds04.entities.City;
-import com.devsuperior.bds04.exceptions.DatabaseException;
-import com.devsuperior.bds04.exceptions.ResourceNotFoundException;
 import com.devsuperior.bds04.repositories.CityRepository;
+import com.devsuperior.bds04.services.exceptions.DatabaseException;
+import com.devsuperior.bds04.services.exceptions.ControllerNotFoundException;
 
 @Service
 public class CityService {
@@ -44,7 +44,7 @@ public class CityService {
 		repository.deleteById(id);
 		
 		} catch (EmptyResultDataAccessException e) {
-			throw new ResourceNotFoundException("Id not found " + id);
+			throw new ControllerNotFoundException("Id not found " + id);
 		} catch (DataIntegrityViolationException e) {
 			throw new DatabaseException("Integrity Violation");
 		}
