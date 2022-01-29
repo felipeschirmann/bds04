@@ -10,11 +10,11 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.devsuperior.bds04.controllers.exceptions.ControllerNotFoundException;
 import com.devsuperior.bds04.dto.CityDTO;
 import com.devsuperior.bds04.entities.City;
 import com.devsuperior.bds04.repositories.CityRepository;
 import com.devsuperior.bds04.services.exceptions.DatabaseException;
-import com.devsuperior.bds04.services.exceptions.ControllerNotFoundException;
 
 @Service
 public class CityService {

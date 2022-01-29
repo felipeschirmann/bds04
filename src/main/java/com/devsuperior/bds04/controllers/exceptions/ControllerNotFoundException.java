@@ -1,4 +1,4 @@
-package com.devsuperior.bds04.services.exceptions;
+package com.devsuperior.bds04.controllers.exceptions;
 
 public class ControllerNotFoundException extends RuntimeException {
 
