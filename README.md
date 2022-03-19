@@ -1,7 +1,7 @@
 ## challenge of validation and security
 The the challenge is to make the tests pass and provide a Rest application with authentication and authorization of areas according to the users' roles
 
-![SpringBoot](https://img.shields.io/npm/types/Spring?label=SpringBoot&logo=SpringBoot&style=plastic)
+![SpringBoot](https://img.shields.io/badge/Spring%20Boot-Version%3A%202.4.4-green)
 
 [![Maven](https://badgen.net/badge/icon/maven?icon=maven&label)](https://maven.apache.org/) 
 
